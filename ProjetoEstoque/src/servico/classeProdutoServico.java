@@ -15,32 +15,27 @@ public class classeProdutoServico extends baseServico<ClasseProduto>{
 
     @Override
     public ArrayList<ClasseProduto> Navegar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Navegar'");
+        return this.repositorio.Browse();
     }
 
     @Override
     public ClasseProduto Ler(int chave) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Ler'");
+        return this.repositorio.Read(chave);
     }
 
     @Override
     public ClasseProduto Editar(ClasseProduto obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Editar'");
+        return this.repositorio.Edit(obj);
     }
 
     @Override
     public ClasseProduto Adicionar(ClasseProduto obj) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Adicionar'");
+        return this.repositorio.Add(obj);
     }
 
     @Override
     public ClasseProduto Deletar(int chave) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Deletar'");
+        return this.repositorio.Delete(chave);
     }
 
 }

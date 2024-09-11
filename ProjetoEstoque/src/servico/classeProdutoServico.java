@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import dominio.ClasseProduto;
 import repositorio.ClasseProdutoRepo;
 
-public class classeProdutoServico extends baseServico<ClasseProduto>{
+public class ClasseProdutoServico extends baseServico<ClasseProduto>{
 
     private ClasseProdutoRepo repositorio;
 
-    public classeProdutoServico(){
+    public ClasseProdutoServico(){
         this.repositorio = new ClasseProdutoRepo();
     }
 
